@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background-color: #ceb5d4;
+  color: #f3f1f6;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  padding: 90px 24px 70px;
+  text-align: center;
+  background-color: #4e7ab1;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #2e2a25;
+}
+
+.sub {
+  color: #ffffff;
+  margin: 12px 0 32px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background-color: #12284b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color .2s;
+}
+
+.btn:hover {
+  background-color: #68825f;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #12284b;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+  padding: 14px 12px;
+}
+
+nav a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 14px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: border-color .2s;
+}
+
+nav a:hover {
+  border-bottom-color: #c9876b;
+}
+
+/* MAIN */
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 22px;
+}
+
+section {
+  padding: 32px 0;
+  border-bottom: 1px solid #e5ddd2;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #2e2a25;
+  letter-spacing: -0.3px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #c9876b;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+p {
+  color: #000000;
+  margin: 0 0 12px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background-color: #b36fc5;
+  border: 1px solid #e5ddd2;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 0;
+  color: #fafafa;
+}
+
+/* LIST */
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ul li {
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4e7ab1;
+  color: #d9d3c9;
+  text-align: center;
+  padding: 32px 20px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 4px 0;
+  color: #d9d3c9;
+}
+
+footer a {
+  color: #f1eae6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
